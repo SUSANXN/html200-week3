@@ -21,6 +21,28 @@ imageList[12] = "images/drawing/thumbs/artwork_13.jpg";
 imageList[13] = "images/drawing/thumbs/artwork_14.jpg";
 imageList[14] = "images/drawing/thumbs/artwork_15.jpg";
    
+var imageListA = new Array();
+imageListA[0] = "images/oil/thumbs/artwork_1.jpg";
+imageListA[1] = "images/oil/thumbs/artwork_2.jpg";
+imageListA[2] = "images/oil/thumbs/artwork_3.jpg";
+imageListA[3] = "images/oil/thumbs/artwork_4.jpg";
+imageListA[4] = "images/oil/thumbs/artwork_5.jpg";
+imageListA[5] = "images/oil/thumbs/artwork_6.jpg";
+imageListA[6] = "images/oil/thumbs/artwork_7.jpg";
+imageListA[7] = "images/oil/thumbs/artwork_8.jpg";
+
+var imageListB = new Array();
+imageListB[0] = "images/watercolor/thumbs/artwork_1.jpg";
+imageListB[1] = "images/watercolor/thumbs/artwork_2.jpg";
+imageListB[2] = "images/watercolor/thumbs/artwork_3.jpg";
+imageListB[3] = "images/watercolor/thumbs/artwork_4.jpg";
+imageListB[4] = "images/watercolor/thumbs/artwork_5.jpg";
+imageListB[5] = "images/watercolor/thumbs/artwork_6.jpg";
+imageListB[6] = "images/watercolor/thumbs/artwork_7.jpg";
+imageListB[7] = "images/watercolor/thumbs/artwork_8.jpg";
+imageListB[8] = "images/watercolor/thumbs/artwork_9.jpg";
+imageListB[9] = "images/watercolor/thumbs/artwork_10.jpg";
+
       
 
 //create the buildThumbnail function
@@ -30,10 +52,19 @@ function buildThumbnails()
   var thumbsDiv =     document.getElementById("thumbs");
  
   var output = "";
-  for(var i=0; i < 10; i++)
+  for(var i=0; i < 8; i++)
   {
     output += '<img src="' + imageList[i] + '" />'; 
-    //concatenation assignment operator 
+  }
+  
+    for(var j=0; j < 8; j++)
+  {
+    output += '<img src="' + imageListA[j] + '" />'; 
+  }
+  
+    for(var k=0; k < 8; k++)
+  {
+    output += '<img src="' + imageListB[k] + '" />'; 
   }
      thumbsDiv.innerHTML = output;
   //thumbsDiv.innerHTML =
